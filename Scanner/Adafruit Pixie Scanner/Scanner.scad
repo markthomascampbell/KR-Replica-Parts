@@ -1,6 +1,6 @@
 // 32mm tall, 25mm deep and 520mm across the back and 525 across the front, V is ~10 degree angle
 $w=545;             //bar total width
-$h=30;              //bar height 32
+$h=30;              //bar height
 $d=25;              //bar depth
 $a=5;               //bar angle
 $dd=-4.5;           //divider position depth
