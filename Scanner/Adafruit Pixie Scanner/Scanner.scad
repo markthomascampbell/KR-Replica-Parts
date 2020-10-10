@@ -76,7 +76,7 @@ difference () {
         }
         translate ([0,$dd-.4,0]) divider (); //center divider 4
     }
-    //translate([$w/2,0,0]) cube([$w,$d*6,$h], center=$t); //cut in half, remove for full bar
+    //translate([$w/2,0,0]) cube([$w,$d*6,$h], center=$t); //uncomment to cut main bar in half, for printing
 }
 union () {  //build rear cover
     difference () {
@@ -93,6 +93,6 @@ union () {  //build rear cover
         rotate([0,0,-$a])translate([-5,$roff-($loff/2)-2,-$h/2]) cube([10,2,4],center=$t);
         rotate([0,0,$a])translate([5,$roff-($loff/2)-2,-$h/2]) cube([10,2,4],center=$t);
         rotate([90,0,-$a])translate([-$w/2+12,0,-($h+8)])cylinder(h=8,r=$r+1,center=$t);//wire hole
-        //translate([$w/2,0,0]) cube([$w,$d*6,$h], center=$t); //cut in half, remove for full bar
+        //translate([$w/2,0,0]) cube([$w,$d*6,$h], center=$t); //uncomment to cut rear cover in half, for printing
     }
 }
