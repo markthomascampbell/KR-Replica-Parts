@@ -10,25 +10,8 @@
 //# Arduino Mega settings
 //#    Tools -> Board -> Arduino Mega or Mega 2560    | Tools -> Programmer -> AVRISP mkII
 //#    Tools -> Processor -> ATMega2560 (Mega 2560)   | Tools -> Port -> (whatever it is)
-//* HiLetgo esp8266 ESP-12E module (amazon.com/gp/product/B081CSJV2V/) Arduino IDE settings
-//* 1. Go to File->Preferences and copy the URL below to get the ESP board manager extensions:
-//*    http://arduino.esp8266.com/stable/package_esp8266com_index.json
-//* 2. Set up your chip as:
-//*    Tools -> Board -> NodeMCU 1.0 (ESP-12E Module) | Tools -> CPU Frequency -> 80 Mhz
-//*    Tools -> Upload Speed -> 921600                | Tools -> Flash Size -> 4M (3M SPIFFS)
-//*    Tools -> Port -> (whatever it is)
-//* 3. Run the 32b exe at: https://github.com/nodemcu/nodemcu-flasher/tree/master/Win32/Release
-//*    Run the 64b exe at: https://github.com/nodemcu/nodemcu-flasher/tree/master/Win64/Release
-//* 4. Test settings work by uploading example Blink program.
-// include https://github.com/0xPIT/encoder/tree/arduino
-// https://mechatronicsblog.com/esp8266-nodemcu-pinout-for-arduino-ide/
-// Pin  Code   Arduino Alias  | Pin  Code   Arduino Alias   | Pin  Code   Arduino Alias
-// A0   A0     A0             | D4   GPIO2  2               | SD2  GPIO9  9
-// D0   GPIO16 16 (not PWM)   | D5   GPIO14 14              | SD3  GPIO10 10
-// D1   GPIO5  5              | D6   GPIO12 12              | RX   GPIO3  3
-// D2   GPIO4  4              | D7   GPIO13 13              | TX   GPIO1  1
-// D3   GPIO0  0              | D8   GPIO15 15
-// These are the pins used for the music maker shield
+
+//### These are the pins used for the music maker shield
 #define SHIELD_RESET -1                 // VS1053 reset pin (unused!)
 const uint8_t SHIELD_CS = 7;            // VS1053 chip select pin (output)
 const uint8_t SHIELD_DCS = 6;           // VS1053 Data/command select pin (output)
@@ -63,19 +46,14 @@ const uint8_t rbSpeedMin = 1;           // Lower limit set for color change spee
 const uint16_t scanSpeedDefault = 120;  // Lower is faster.  Usable range 40-500, Default 120
 const uint16_t scanSpeedMax = 20;       // Upper speed limit set for scan speed
 const uint16_t scanSpeedMin = 600;      // Lower speed limit set for scan speed
-//#define Red CRGB::Red; #define Orange CRGB::Orange; #define Yellow CRGB::Yellow; #define Green CRGB::Green; #define Blue CRGB::Blue
-//#define Purple CRGB::Purple; #define White CRGB::White; #define Black CRGB::Black; #define Gold CRGB::Gold;
 CHSV Red = CHSV( 0, 255, 255 ); CHSV Orange = CHSV( 32, 255, 255 ); CHSV Yellow = CHSV( 64, 255, 255 ); 
 CHSV Green = CHSV( 96, 255, 255 ); CHSV Aqua = CHSV( 128, 255, 255 ); CHSV Blue = CHSV( 160, 255, 255 );
 CHSV Purple = CHSV( 192, 255, 255 ); CHSV Pink = CHSV( 224, 255, 255 ); 
 CHSV Black = CHSV( 0, 255, 0 ); CHSV Gold = CHSV( 48, 255, 255 ); CHSV White = CHSV( 0, 0, 255 );
-//#define White CRGB::White 
 //CRGB USA[] = { CRGB::Red, CRGB::White, CRGB::Blue }; // call with USA[i++] to loop through
 CHSV color = Red;
 //CRGB color = Red;                       // http://fastled.io/docs/3.1/pixeltypes_8h_source.html line 590 for list
 CRGBArray<numLEDs> leds[numArrays];
-//#define color CHSV(0, 255, 255)
-//String color = "CRGB::Red";
 bool allOn = true;                      // Starts all on
 bool scannerOn = false;                 // Lights run while scannerOn = true, and should be false if allOn = true
 bool soulOn = false;                    // Enables Soul Survivor mode when enabled
@@ -132,14 +110,13 @@ void setup() {
   pinMode(pirPin, INPUT);
   pinMode(ledPin, OUTPUT); digitalWrite(ledPin, ledState);
   
-  //******* Rotary Encoder initialization
+  //### Rotary Encoder initialization
   pinMode(RE1_CLK,INPUT_PULLUP); attachInterrupt(5, updateEncoder, CHANGE); // Rotary Encoder 1 CLK
-  //pinMode(RE1_DT,INPUT); attachInterrupt(4, updateEncoder, CHANGE);       // Rotary Encoder 1 DT
   pinMode(RE1_SW,INPUT_PULLUP); attachInterrupt(4, updateEncoder, CHANGE);  // Rotary Encoder 1 SW
   RE1_lastStateCLK = digitalRead(RE1_CLK);
   if (verb) { Serial.println(F("Starting up...")); }
   
-  //******* Music Maker initialization
+  //### Music Maker initialization
   Serial.println(F("Adafruit VS1053 Library Loading"));
   if (musicPlayer.begin()) { 
     Serial.println(F("VS1053 found"));
@@ -241,25 +218,6 @@ void interfaces() {
       Serial.println(F("  f / sound - activate scanner sound")); Serial.println(F("  h / help - help menu"));
     }
   }
-  
- /*int pwrReading = digitalRead(pwrPin);
-  if (pwrReading != lastButtonState) { lastDT = millis(); }
-  if ((millis() - lastDT) > dtDelay) {
-    if (pwrReading != buttonState) {
-      buttonState = pwrReading;
-      if (buttonState = HIGH) {
-        ledState = !ledState;
-        digitalWrite(ledPin, ledState);
-        turnOff = !turnOff;   //toggle turnOff state when button pressed 
-        Serial.print("Button pressed, LED state is ");
-        Serial.print(ledState);
-        Serial.print(" and turnOff state is ");
-        Serial.println(turnOff);
-      }
-    }
-  }
-  if (turnOff == false) {scannerOn = true; angle = angleStart; digitalWrite(ledPin, ledState);}
-  lastButtonState = pwrReading; */
 }
 
 
@@ -453,6 +411,6 @@ void policeScan() {
 }
 
 
-void surveillanceMode() {
+/*void surveillanceMode() {
   
-}
+}*/
