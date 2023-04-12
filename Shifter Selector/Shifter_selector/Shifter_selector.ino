@@ -36,12 +36,12 @@ void loop() {
     Serial.print(F("int i (")); Serial.print(i); Serial.print(F(") is pin #")); Serial.print(hallArray[i]); 
     Serial.print(F(", value is ")); Serial.print(digitalRead(hallArray[i]));
     Serial.print(F("    c is ")); Serial.print(c);
-    if (digitalRead(hallArray[i] == HIGH && c < 10)) { Serial.println(F("Boo")); c++; delay(1);
+    if (digitalRead(hallArray[i] == HIGH && c < 10)) { Serial.println(F("Counting up")); c++; delay(1);
     } else if (digitalRead(hallArray[i]) == HIGH && c == 10 && isOn[i] == 0) { 
         strip.setPixelColor(gearArray[i], White); strip.show(); 
         Serial.print(F("Turning on ")); Serial.println(gearNames[i]);
         isOn[i] = 1;
-    } else if (digitalRead(hallArray[i]) == LOW && c > 0) { Serial.println(F("Bee")); c--; delay(1);
+    } else if (digitalRead(hallArray[i]) == LOW && c > 0) { Serial.println(F("Counting down")); c--; delay(1);
     } else if (digitalRead(hallArray[i]) == LOW && c == 0 && isOn[i] == 1) { 
         strip.setPixelColor(gearArray[i], Black); strip.show(); 
         Serial.print(F("Turning off ")); Serial.println(gearNames[i]);
