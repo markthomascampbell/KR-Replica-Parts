@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name KITT-Voicebox-12v-rescue)(type Legacy)(uri "${KIPRJMOD}/KITT Voicebox 12v-rescue.lib")(options "")(descr ""))
+)
