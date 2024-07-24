@@ -9,7 +9,7 @@
   //const int gearArray [] = {0,1,2,3,4,5};                         // 0=Park, 1=Reverse, 2=Neutral, 3=Drive, 4=2, 5=1
   //const String gearNames [] = { "Park", "Reverse", "Neutral", "Drive", "Second", "First" };
 // Uncomment 4 lines below if transmission is a 4 speed
-  const int LED_COUNT = 3;                                          // Number of NeoPixels
+  const int LED_COUNT = 7;                                          // Number of NeoPixels
   const int hallArray [] = {2,3,4,5,6,7,8};                         // Pins used by each hall sensor
   const int gearArray [] = {0,1,2,3,4,5,6};                         // 0=Park, 1=Reverse, 2=Neutral, 3=Drive, 4=3, 5=2, 6=1
   const String gearNames [] = { "Park", "Reverse", "Neutral", "Drive", "Third", "Second", "First" };
