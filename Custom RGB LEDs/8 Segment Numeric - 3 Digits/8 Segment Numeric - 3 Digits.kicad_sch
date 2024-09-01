@@ -1,0 +1,3496 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "a64593bf-4881-4d87-81c5-46d1cc885536")
+	(paper "A4")
+	(lib_symbols
+		(symbol "CustomSymbols:SK6812-EC3210F"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 5.08 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right bottom)
+				)
+			)
+			(property "Value" "SK6812-EC3210F"
+				(at 1.27 -5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+				(at 1.27 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+				(at 2.54 -9.525 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RGB LED NeoPixel addressable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED*SK6812*PLCC*5.0x5.0mm*P3.2mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SK6812-EC3210F_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "SK6812-EC3210F_0_1"
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SK6812-EC3210F_1_1"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+5V"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0) hide
+					(name "+5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 111.76 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "001ef511-1f58-4ebc-953b-b05e3dc98542")
+	)
+	(junction
+		(at 50.8 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d79c7d2-b5d0-4729-a68f-e0fb3a9089ea")
+	)
+	(junction
+		(at 111.76 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "17ef6581-c60f-4e4a-af80-e9787a8f6fcc")
+	)
+	(junction
+		(at 142.24 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "189c299f-ff16-423f-b7f9-17fccd5921a0")
+	)
+	(junction
+		(at 142.24 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b07ff3f-1faf-497a-bada-9d4c95d41d0b")
+	)
+	(junction
+		(at 66.04 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2adc9a4c-f700-45e2-bbc8-895c9969ee5a")
+	)
+	(junction
+		(at 127 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b6f127e-e1a3-479b-8c6b-987d44dad0ff")
+	)
+	(junction
+		(at 50.8 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "331048a0-0838-4f17-90af-70f4c5ff38fe")
+	)
+	(junction
+		(at 111.76 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3bdd149b-e899-4c0c-9906-a4414ec0846b")
+	)
+	(junction
+		(at 96.52 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c3bf4d1-8989-4cd5-b1f0-770e80b594ba")
+	)
+	(junction
+		(at 96.52 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ec5a875-be62-48f4-9ada-e0ddf2e62281")
+	)
+	(junction
+		(at 127 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f10f639-c9cb-4d56-a611-500662e6b5f8")
+	)
+	(junction
+		(at 111.76 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f5e6b0d-d1f2-47ce-8d45-080fbbd5ae39")
+	)
+	(junction
+		(at 142.24 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e67c614-8a2f-44e4-9cc4-dc342220f3c1")
+	)
+	(junction
+		(at 50.8 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "519af608-de11-4c57-801b-9c20fce5e2f3")
+	)
+	(junction
+		(at 142.24 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56183283-7997-4f70-a6b6-e2b3c6d4fe6e")
+	)
+	(junction
+		(at 50.8 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67a21ae7-a768-4a0e-aaa7-61e350c61efe")
+	)
+	(junction
+		(at 127 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "705f9184-1ce0-4877-ba98-1fae896bb49e")
+	)
+	(junction
+		(at 127 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7517c0bf-e966-4c50-9ad5-315b3f4412b8")
+	)
+	(junction
+		(at 111.76 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7592bbf0-9969-42f6-ac77-01956cc3eb93")
+	)
+	(junction
+		(at 66.04 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "816f7cdd-1744-4c52-a68a-1356a8808c4a")
+	)
+	(junction
+		(at 142.24 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8279236e-d882-4dd9-ba8f-479311f0835a")
+	)
+	(junction
+		(at 50.8 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8587dc63-02c8-4c94-9ac9-9ad7a543957d")
+	)
+	(junction
+		(at 127 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8693f1c3-b1e5-4212-ae68-97d5154d4b01")
+	)
+	(junction
+		(at 96.52 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91d46ad6-3181-4ff6-970c-06e5f9fa7985")
+	)
+	(junction
+		(at 81.28 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "955eed7c-d519-4e02-a1c6-de2fba0b7df2")
+	)
+	(junction
+		(at 66.04 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95a717b2-4ecc-4710-8a41-331baa490df7")
+	)
+	(junction
+		(at 81.28 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9626f859-bf4a-4610-9573-8f2fd3ff6a3c")
+	)
+	(junction
+		(at 96.52 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ddd8255-1a77-41bd-98ef-e96e14c7ce5b")
+	)
+	(junction
+		(at 66.04 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a24e4a0a-d2ed-4338-9e8d-1e9bd8c22331")
+	)
+	(junction
+		(at 50.8 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a43f8f14-028b-43dc-8310-30bbcedc5cb7")
+	)
+	(junction
+		(at 81.28 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be945ea3-0b5e-45b4-a390-2a5f84a794ae")
+	)
+	(junction
+		(at 81.28 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1dd0904-a5f3-4084-abaf-6aef011c31f6")
+	)
+	(junction
+		(at 96.52 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c761d4b4-5301-4813-a1e1-f137a0ae3ffa")
+	)
+	(junction
+		(at 127 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d12ce99c-7a53-4dd0-b20c-024cbf3700bd")
+	)
+	(junction
+		(at 142.24 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5911698-3d1c-49dc-afc4-6901154c9e7b")
+	)
+	(junction
+		(at 81.28 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7242946-5437-436d-90e2-d6983ed918d6")
+	)
+	(junction
+		(at 111.76 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d777fe9e-e43a-4409-b50c-0860de6dc15c")
+	)
+	(junction
+		(at 66.04 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d84c2217-c22f-4d98-b681-b08e76d02447")
+	)
+	(junction
+		(at 96.52 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ddd542d8-114b-48f1-bcf6-6fce83cbd096")
+	)
+	(junction
+		(at 81.28 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "edf61b65-320a-4f62-8bdc-c608584436f2")
+	)
+	(junction
+		(at 66.04 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5fa8a3f-0542-4c14-941b-8bdbd99fe1ee")
+	)
+	(wire
+		(pts
+			(xy 111.76 63.5) (xy 127 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03e4f3b7-060c-47a8-b307-995ec7198953")
+	)
+	(wire
+		(pts
+			(xy 96.52 58.42) (xy 111.76 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08cb8795-3bdd-424c-8d42-645b87d8b953")
+	)
+	(wire
+		(pts
+			(xy 111.76 38.1) (xy 127 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "130df7fa-27d6-4fb0-9b7c-fdb49a69133c")
+	)
+	(wire
+		(pts
+			(xy 81.28 38.1) (xy 96.52 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1967c859-ab3c-48d6-98d0-3a7c49e8145f")
+	)
+	(wire
+		(pts
+			(xy 66.04 22.86) (xy 81.28 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2049f879-384e-4fc0-8d91-1b1d4397518e")
+	)
+	(wire
+		(pts
+			(xy 35.56 78.74) (xy 50.8 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24210de1-f4e6-4a98-bce0-80d64711398a")
+	)
+	(wire
+		(pts
+			(xy 127 78.74) (xy 142.24 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "279fb56b-4a10-41b9-89e2-fbc76045804e")
+	)
+	(wire
+		(pts
+			(xy 50.8 78.74) (xy 66.04 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3374facd-8dfe-4ff3-a10e-3b50387ce209")
+	)
+	(wire
+		(pts
+			(xy 127 43.18) (xy 142.24 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36de0540-4c45-48c6-bded-9841ec2a98f6")
+	)
+	(wire
+		(pts
+			(xy 96.52 38.1) (xy 111.76 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37c68b09-c9fd-4357-9c77-2fbb60254ee1")
+	)
+	(wire
+		(pts
+			(xy 35.56 22.86) (xy 50.8 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3950d422-782a-4d36-98b3-a55333bb4a46")
+	)
+	(wire
+		(pts
+			(xy 50.8 22.86) (xy 66.04 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4182cd99-ffdf-42aa-92bb-dbd44c0fc6ab")
+	)
+	(wire
+		(pts
+			(xy 149.86 60.96) (xy 27.94 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ab6d249-d2ae-4f63-aaff-5ec143277c42")
+	)
+	(wire
+		(pts
+			(xy 127 22.86) (xy 142.24 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5abf1088-8e61-43f7-8ee7-ec7c7ff4f38a")
+	)
+	(wire
+		(pts
+			(xy 142.24 38.1) (xy 160.02 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d3b21c9-d1df-44e7-bfd6-aa95773407e2")
+	)
+	(wire
+		(pts
+			(xy 142.24 63.5) (xy 153.67 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61945278-ce22-42d3-98e5-c566dc6a0fec")
+	)
+	(wire
+		(pts
+			(xy 35.56 38.1) (xy 50.8 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65ea544f-2c8a-41c0-858b-ad434db8e646")
+	)
+	(wire
+		(pts
+			(xy 66.04 63.5) (xy 81.28 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68787426-b376-4481-9659-8cb2055736ce")
+	)
+	(wire
+		(pts
+			(xy 50.8 63.5) (xy 66.04 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69445714-6dbd-4359-a1b3-42649cd1d69a")
+	)
+	(wire
+		(pts
+			(xy 81.28 43.18) (xy 96.52 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7935ab21-e98c-4427-a222-d53e1549d659")
+	)
+	(wire
+		(pts
+			(xy 127 63.5) (xy 142.24 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a2fabd-5075-47b2-982b-7892314e7542")
+	)
+	(wire
+		(pts
+			(xy 27.94 60.96) (xy 27.94 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8938d6b0-eaa2-4cd2-8840-fda28acf8ec4")
+	)
+	(wire
+		(pts
+			(xy 111.76 22.86) (xy 127 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "954b8cb9-9437-4a5d-999e-3e55f93ea138")
+	)
+	(wire
+		(pts
+			(xy 111.76 43.18) (xy 127 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab1f9f88-0520-4114-a57f-e1236b78a720")
+	)
+	(wire
+		(pts
+			(xy 96.52 78.74) (xy 111.76 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad392518-ff19-4c17-b618-086c135ad339")
+	)
+	(wire
+		(pts
+			(xy 142.24 22.86) (xy 153.67 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aefcb079-59ec-4a1d-9d9f-8c2057a34f9b")
+	)
+	(wire
+		(pts
+			(xy 96.52 43.18) (xy 111.76 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4db1cc5-4cb4-4189-8502-4dd63a474c18")
+	)
+	(wire
+		(pts
+			(xy 66.04 58.42) (xy 81.28 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b663bc3d-49bc-4a82-9792-0ee4fe9efd30")
+	)
+	(wire
+		(pts
+			(xy 81.28 58.42) (xy 96.52 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7de6284-abf1-4ad3-a7eb-c9348dd4162a")
+	)
+	(wire
+		(pts
+			(xy 81.28 78.74) (xy 96.52 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb92093f-cdee-48ba-97ce-38593c1c7155")
+	)
+	(wire
+		(pts
+			(xy 81.28 22.86) (xy 96.52 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2cba08c-388b-4860-89be-3a9220cd81a8")
+	)
+	(wire
+		(pts
+			(xy 35.56 58.42) (xy 50.8 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c43a8463-aa01-4a2c-bee9-5f4e7eea5398")
+	)
+	(wire
+		(pts
+			(xy 66.04 78.74) (xy 81.28 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c537c977-5d40-48f4-9c47-3f5b35663111")
+	)
+	(wire
+		(pts
+			(xy 149.86 30.48) (xy 149.86 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7964b35-b189-489c-a8d9-04b90e4e3e6a")
+	)
+	(wire
+		(pts
+			(xy 149.86 50.8) (xy 149.86 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7a813b3-ab00-4bee-b881-a4783d7fb2e2")
+	)
+	(wire
+		(pts
+			(xy 27.94 40.64) (xy 27.94 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c80896d3-f4aa-4bda-bfbe-c1529ef29fd1")
+	)
+	(wire
+		(pts
+			(xy 142.24 43.18) (xy 153.67 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce5c1534-835f-4c38-9623-954ea5d80a9f")
+	)
+	(wire
+		(pts
+			(xy 127 58.42) (xy 142.24 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce8fa8ba-fb00-400c-a8f5-979b29a87b00")
+	)
+	(wire
+		(pts
+			(xy 35.56 43.18) (xy 50.8 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d35c753f-4cca-4f77-b5c0-5e4a4d733e0d")
+	)
+	(wire
+		(pts
+			(xy 96.52 22.86) (xy 111.76 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9ad8959-c59a-46f2-8fac-5a87b2013735")
+	)
+	(wire
+		(pts
+			(xy 50.8 58.42) (xy 66.04 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc33d849-fa30-492b-bffd-5410e8d71790")
+	)
+	(wire
+		(pts
+			(xy 66.04 38.1) (xy 81.28 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0da8986-e30d-41e6-b969-e1c07d19b287")
+	)
+	(wire
+		(pts
+			(xy 81.28 63.5) (xy 96.52 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e280a8a1-536e-4b69-9b90-8c36c500afea")
+	)
+	(wire
+		(pts
+			(xy 111.76 58.42) (xy 127 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e545f9f2-3a57-454e-b568-b9fd67b00bd5")
+	)
+	(wire
+		(pts
+			(xy 66.04 43.18) (xy 81.28 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7014728-e284-4f30-9a74-d4b130a7bc4d")
+	)
+	(wire
+		(pts
+			(xy 127 38.1) (xy 142.24 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed283741-e118-4ca4-9183-74cdcc29d16c")
+	)
+	(wire
+		(pts
+			(xy 50.8 43.18) (xy 66.04 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0aa3a6e-47c8-49ec-befb-68d42ced7a35")
+	)
+	(wire
+		(pts
+			(xy 149.86 40.64) (xy 27.94 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f323ae2c-0d65-4ebd-aad9-519e0cada21b")
+	)
+	(wire
+		(pts
+			(xy 35.56 63.5) (xy 50.8 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3a529aa-f858-4096-9038-9041d50fc304")
+	)
+	(wire
+		(pts
+			(xy 142.24 78.74) (xy 160.02 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f62a1d9a-d76d-4a26-b6c3-a0de27ed41d1")
+	)
+	(wire
+		(pts
+			(xy 142.24 58.42) (xy 160.02 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb88e71e-6931-4562-a567-2f2a5747b6f7")
+	)
+	(wire
+		(pts
+			(xy 50.8 38.1) (xy 66.04 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd84a555-0ab3-451b-9913-bbda3bcaadea")
+	)
+	(wire
+		(pts
+			(xy 96.52 63.5) (xy 111.76 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fed7cdbc-1dd6-4749-939a-dd170c9a4383")
+	)
+	(wire
+		(pts
+			(xy 111.76 78.74) (xy 127 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff64359a-7ec7-46b4-8136-d18efd29b19f")
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 153.67 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00853819-c5cc-4c7a-a6e6-be10124d1684")
+		(property "Reference" "#PWR03"
+			(at 153.67 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 153.67 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 153.67 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed7ee0ac-f71e-47e7-a036-bf4f0a15406e")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 96.52 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19c4ed44-f7bc-4dd5-a116-e7c69e3b4f04")
+		(property "Reference" "D5"
+			(at 111.76 26.8321 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 111.76 29.3721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 97.79 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 99.06 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 96.52 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98067488-a37b-4ed1-bedd-87f6bf13906c")
+		)
+		(pin "2"
+			(uuid "bb66f618-8621-47c2-94cd-f6af4e45cdec")
+		)
+		(pin "3"
+			(uuid "9f20ed8e-157c-430d-a282-8205f32f81a4")
+		)
+		(pin "4"
+			(uuid "089e9c3d-bce8-4f7a-a46d-468137787c40")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 35.56 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31d7eb77-c8b0-4e74-8027-21b1d0804a73")
+		(property "Reference" "D17"
+			(at 50.8 67.4721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 50.8 70.0121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 36.83 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 38.1 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6007140f-551d-47a5-98af-8d5a1e0f5745")
+		)
+		(pin "2"
+			(uuid "dc3814d3-4103-429e-8228-364043d89ffd")
+		)
+		(pin "3"
+			(uuid "25678697-470b-4ac0-aed6-8242a4fba7bd")
+		)
+		(pin "4"
+			(uuid "0c63224f-dc85-4b1f-bc75-db2ed224a842")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 142.24 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38de733a-4bde-4d46-a5d7-bc2c65df68b4")
+		(property "Reference" "D24"
+			(at 157.48 67.4721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 157.48 70.0121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 143.51 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 144.78 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8cf0cd7f-20da-4e58-a8e7-e5e02abfe3de")
+		)
+		(pin "2"
+			(uuid "b630e0dd-a974-4cc4-8a29-6b757a36efec")
+		)
+		(pin "3"
+			(uuid "1d7dac9d-7980-4b25-99fc-bfd1fc8e70e0")
+		)
+		(pin "4"
+			(uuid "d7ca3275-57a4-4c4a-a2c8-c9631f912e5a")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 50.8 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3bc5d9b8-b7c9-42c5-b9ca-af9faee2283f")
+		(property "Reference" "D10"
+			(at 66.04 47.1521 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 66.04 49.6921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 52.07 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 53.34 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "580a29ba-c908-488c-8466-55c52eecaa2b")
+		)
+		(pin "2"
+			(uuid "04cdd506-dc13-4879-af7b-b39327b5d642")
+		)
+		(pin "3"
+			(uuid "fb5107ac-fdd8-4e10-9ead-95e8f186b480")
+		)
+		(pin "4"
+			(uuid "25da9389-8eca-490f-bc24-6120a35affc9")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 153.67 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40d53419-824d-457d-b213-e0e07c92962d")
+		(property "Reference" "#PWR02"
+			(at 153.67 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 153.67 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 153.67 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "475afc0a-5074-430e-a161-bfa332ce8d13")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 111.76 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40e648ae-1947-46c1-8417-2ef3a6b0882b")
+		(property "Reference" "D14"
+			(at 127 47.1521 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 127 49.6921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 113.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 114.3 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96f6a426-1236-4968-a6e5-6556c83c7338")
+		)
+		(pin "2"
+			(uuid "e2f44264-306b-4ea0-8a8d-4f4345d0089e")
+		)
+		(pin "3"
+			(uuid "4b1742b3-b33e-4855-87b1-35318ef0c36c")
+		)
+		(pin "4"
+			(uuid "427dc435-c287-4066-b26f-4a910770baf7")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c526795-6b50-4c98-b3c3-a81240722056")
+		(property "Reference" "#PWR05"
+			(at 160.02 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6dda5d28-4c53-4b7a-a5a7-7f7f7565b9dc")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 50.8 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64157aba-6c62-45c4-af86-10aaa22e6c21")
+		(property "Reference" "D18"
+			(at 66.04 67.4721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 66.04 70.0121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 52.07 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 53.34 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78f48aa3-e5af-4eac-bb11-2d73b0dc75c8")
+		)
+		(pin "2"
+			(uuid "a9d7b933-141d-45a4-8039-bbde8948bda9")
+		)
+		(pin "3"
+			(uuid "a39aaf47-022a-45e1-a149-e31cac1c9536")
+		)
+		(pin "4"
+			(uuid "3d1ed354-f363-4257-9d39-981ddcf3911a")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 142.24 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66904415-ba68-496e-94a4-d0c7a8e902a2")
+		(property "Reference" "D8"
+			(at 157.48 26.8321 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 157.48 29.3721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 143.51 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 144.78 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "184d4983-af0e-4430-adfc-cf67c544d355")
+		)
+		(pin "2"
+			(uuid "02d9e41b-c36e-41b7-95e9-fd4d451b065d")
+		)
+		(pin "3"
+			(uuid "e9f02dc5-ca00-4270-bdf7-70de936c74ca")
+		)
+		(pin "4"
+			(uuid "51233292-2b87-4022-8a6d-3b5cafad9445")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 111.76 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "711f4701-41b7-4173-bb8a-d5eb25a08a80")
+		(property "Reference" "D6"
+			(at 127 26.8321 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 127 29.3721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 113.03 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 114.3 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34c01578-3a49-4f76-9431-ee07de326fca")
+		)
+		(pin "2"
+			(uuid "5d81594d-9383-42d5-bcb5-af3ea2eedee0")
+		)
+		(pin "3"
+			(uuid "3cf86d65-8a3e-4317-af3a-d210927d57b9")
+		)
+		(pin "4"
+			(uuid "f1647293-8c16-4d7b-b2bd-6c21ecc745f2")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 127 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75dd4f7d-597d-4087-94c6-9e69986c4a49")
+		(property "Reference" "D23"
+			(at 142.24 67.4721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 142.24 70.0121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 128.27 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 129.54 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0dc7b0a6-8b9e-44a1-9c8f-a9932eb0f9aa")
+		)
+		(pin "2"
+			(uuid "1e68302a-3331-4484-a0b5-9b000b2fe590")
+		)
+		(pin "3"
+			(uuid "096a15df-b2af-40ad-9e3e-447692728833")
+		)
+		(pin "4"
+			(uuid "01804607-e969-45f0-875c-4d9558600a39")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 111.76 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c03c78c-a15d-4d57-9f4b-2657317a38f5")
+		(property "Reference" "D22"
+			(at 127 67.4721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 127 70.0121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 113.03 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 114.3 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dbc3a9b4-c05e-4187-b392-35d493bca425")
+		)
+		(pin "2"
+			(uuid "cb1dfa2b-d97d-4cff-b97e-2be4f57e89a9")
+		)
+		(pin "3"
+			(uuid "879c71f6-e5b5-496a-8b0f-96c5012640d6")
+		)
+		(pin "4"
+			(uuid "1e106e0d-ea23-40ab-92cd-7a5a238948fa")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 35.56 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a7de175-b5af-4aa2-b550-e390ae71ba0c")
+		(property "Reference" "D9"
+			(at 50.8 47.1521 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 50.8 49.6921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 36.83 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 38.1 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9897d013-2451-4609-8f11-161f4197520e")
+		)
+		(pin "2"
+			(uuid "8f5541a8-c61d-4fa7-98aa-70a399510a01")
+		)
+		(pin "3"
+			(uuid "a689c2bd-1b48-4f4f-897d-97040b117b6a")
+		)
+		(pin "4"
+			(uuid "55d3fd18-281b-4401-8154-42c5fdac4f5e")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 66.04 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8bb34570-d449-4f2b-9bd1-acf2de101daf")
+		(property "Reference" "D11"
+			(at 81.28 47.1521 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 81.28 49.6921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 67.31 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 68.58 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e74ed32-1751-4097-b67e-2acb59f034a5")
+		)
+		(pin "2"
+			(uuid "ddb5a9b9-9ef1-434e-b567-1fd1e695a995")
+		)
+		(pin "3"
+			(uuid "10b109c7-f698-4111-8bfe-73e9f7eaefa9")
+		)
+		(pin "4"
+			(uuid "826a8934-c4da-4661-8d48-06496346b566")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 81.28 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c712805-83a5-4c19-826f-1d7cb529a973")
+		(property "Reference" "D12"
+			(at 96.52 47.1521 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 96.52 49.6921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 82.55 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 83.82 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2ef4a9d-9572-48ed-a5f4-f6f0080b6801")
+		)
+		(pin "2"
+			(uuid "7fff86e8-3fba-4290-9df3-b2e86419c1cb")
+		)
+		(pin "3"
+			(uuid "09b3e245-c835-4794-ad4f-3dccc9b51918")
+		)
+		(pin "4"
+			(uuid "ab8c436d-d4ed-4ac9-9cb4-4ca4e65c6e4c")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 35.56 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93e248b8-0baf-44c7-a372-e17621a9567a")
+		(property "Reference" "D1"
+			(at 50.8 26.8321 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 50.8 29.3721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 36.83 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 38.1 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f682830-9cfb-4a4b-9e20-d5649a4e477e")
+		)
+		(pin "2"
+			(uuid "3b28a3f4-e0cd-4166-bdde-8b5d34dc4e9a")
+		)
+		(pin "3"
+			(uuid "808a6c9e-9404-4c7c-b713-0f069629ec5d")
+		)
+		(pin "4"
+			(uuid "8d5e6d44-cc82-4a4c-92d1-6d5b4ccf8675")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 50.8 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ae8ed04-c4bf-4de3-8318-421f59a53316")
+		(property "Reference" "D2"
+			(at 66.04 26.8321 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 66.04 29.3721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 52.07 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 53.34 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7c03d570-ec98-4957-ac0a-811e383fdd61")
+		)
+		(pin "2"
+			(uuid "104ced55-477f-4e83-bc9c-54dac9ba0b71")
+		)
+		(pin "3"
+			(uuid "f2a738d9-ae95-4e15-9ed7-fa30085abbaf")
+		)
+		(pin "4"
+			(uuid "4a48ab81-a2e6-48ab-aec8-5ffe873312b7")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 127 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4629bbd-0a5f-4396-8ad4-4415a7929eae")
+		(property "Reference" "D7"
+			(at 142.24 26.8321 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 142.24 29.3721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 128.27 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 129.54 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf273672-e230-4bee-a34d-f88e11c136fb")
+		)
+		(pin "2"
+			(uuid "3721417f-202e-4b02-8f57-83b37e118c8b")
+		)
+		(pin "3"
+			(uuid "09d621a8-ed5b-4f0d-af9d-6783b0a7a43a")
+		)
+		(pin "4"
+			(uuid "5a6cd8ff-b6f0-466b-93de-2eba87058520")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 96.52 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6c91e8c-d618-410a-ae03-5f8de1251a92")
+		(property "Reference" "D13"
+			(at 111.76 47.1521 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 111.76 49.6921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 97.79 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 99.06 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 96.52 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b826fe8-33b0-4f0d-aed0-762b5bf092e6")
+		)
+		(pin "2"
+			(uuid "52e90983-aa14-41d0-835a-87c339934782")
+		)
+		(pin "3"
+			(uuid "eb77f358-be62-4865-832f-7c9c7a4b1eb6")
+		)
+		(pin "4"
+			(uuid "537bf3f5-6251-4fa5-adc1-fc79e54be206")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 127 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be793ab8-6c72-4429-a04b-5e727f618ffd")
+		(property "Reference" "D15"
+			(at 142.24 47.1521 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 142.24 49.6921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 128.27 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 129.54 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e29c7958-5d58-451e-b6cd-86d8b4ffd977")
+		)
+		(pin "2"
+			(uuid "214fe086-0871-43ab-828b-69b2edea9d61")
+		)
+		(pin "3"
+			(uuid "1f76807e-505e-41ac-bec0-a1b3f14eeffa")
+		)
+		(pin "4"
+			(uuid "8bc4285f-d508-4bd1-8dfe-81751fd61242")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 96.52 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bfe8a7c8-e69b-4fe5-b648-6d152e638758")
+		(property "Reference" "D21"
+			(at 111.76 67.4721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 111.76 70.0121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 97.79 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 99.06 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 96.52 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ff041dd-25d8-4393-acba-ab68db373ada")
+		)
+		(pin "2"
+			(uuid "6eef9052-40fa-4606-8c19-69078fef4fbe")
+		)
+		(pin "3"
+			(uuid "9c0a1354-4ea3-43b9-bb87-503f731c0da7")
+		)
+		(pin "4"
+			(uuid "8d4d6361-ab68-4219-a056-ffa6aee2c730")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c73c5bb5-3f86-4e86-b7d8-df8dd763a9bc")
+		(property "Reference" "#PWR06"
+			(at 160.02 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "12dc275c-aba7-46b1-9c55-251d7fcd4872")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 66.04 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb9f33a4-3c4b-4d3f-bfc9-0c133e47667d")
+		(property "Reference" "D19"
+			(at 81.28 67.4721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 81.28 70.0121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 67.31 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 68.58 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e9e9bed-66a4-4b96-a95f-f70ae150f5b6")
+		)
+		(pin "2"
+			(uuid "37eea013-a7f5-4b84-bb93-b9456730850b")
+		)
+		(pin "3"
+			(uuid "43994601-d3f0-4b8a-8469-1cc2cc9080f3")
+		)
+		(pin "4"
+			(uuid "e5b2438a-9649-4708-9ffb-cde86d4538e2")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 81.28 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cbb4243b-398b-43ae-839e-383f781ac480")
+		(property "Reference" "D4"
+			(at 96.52 26.8321 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 96.52 29.3721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 82.55 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 83.82 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a700cfc-f1c1-438d-8979-f5a27893625b")
+		)
+		(pin "2"
+			(uuid "3d2b0b5e-9eec-4d49-9105-19fd9463c8cd")
+		)
+		(pin "3"
+			(uuid "d5768011-f5e5-4506-99b1-e2ac16b3edfd")
+		)
+		(pin "4"
+			(uuid "d7f83dc2-14e7-4de3-966e-2ec224f8a636")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 142.24 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf8f37d1-5564-491d-a3eb-3349dc41dca9")
+		(property "Reference" "D16"
+			(at 157.48 47.1521 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 157.48 49.6921 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 143.51 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 144.78 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf7ffdb5-1e44-4297-83f3-731e44acd7a5")
+		)
+		(pin "2"
+			(uuid "e887538d-763b-4878-91f1-e1891564778d")
+		)
+		(pin "3"
+			(uuid "220a1630-f89a-47cf-a264-ea045f4dac9b")
+		)
+		(pin "4"
+			(uuid "8162ddc1-ace2-4486-a910-b0697b4afa46")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d05c2a19-043b-4ba1-b1ca-495a982e4565")
+		(property "Reference" "#PWR07"
+			(at 160.02 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e519dea-64f8-4c86-8244-2e401ceebde9")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 153.67 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9feeea3-2b64-4f1d-b1ea-bcaf44cd9438")
+		(property "Reference" "#PWR01"
+			(at 153.67 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 153.67 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 153.67 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d14b06ce-4010-4e59-bad1-1661369854d9")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 81.28 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea48f9df-de08-4f7b-98cb-7e3d9b4d22d7")
+		(property "Reference" "D20"
+			(at 96.52 67.4721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 96.52 70.0121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 82.55 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 83.82 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98f458a2-adbb-49b9-8ce4-45af2127d2a4")
+		)
+		(pin "2"
+			(uuid "0da2dc3e-07dd-434f-a592-3f919e87b67d")
+		)
+		(pin "3"
+			(uuid "7244f84e-0c48-45e1-b23d-b21f131c7a07")
+		)
+		(pin "4"
+			(uuid "1b509fc5-ad47-4a29-ba9f-bb1b3fa18353")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:SK6812-EC3210F")
+		(at 66.04 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f93fb27b-1de8-4c35-b2a3-e3da492993f1")
+		(property "Reference" "D3"
+			(at 81.28 26.8321 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812-EC3210F"
+			(at 81.28 29.3721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom Footprint Library:SK6812-EC3210F"
+			(at 67.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4892/4892_SK68XX-EC3210F__REV.A.pdf"
+			(at 68.58 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3934f6d7-7724-4e43-a1c0-c45e79be0add")
+		)
+		(pin "2"
+			(uuid "365ab68c-d3b6-4dde-b731-51d24cd5cf80")
+		)
+		(pin "3"
+			(uuid "13d6a2f9-0e89-421b-adf7-cdaf7292dd56")
+		)
+		(pin "4"
+			(uuid "47d38f30-007f-45ab-a146-a96725dea54c")
+		)
+		(instances
+			(project "8 Segment Numeric"
+				(path "/a64593bf-4881-4d87-81c5-46d1cc885536"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

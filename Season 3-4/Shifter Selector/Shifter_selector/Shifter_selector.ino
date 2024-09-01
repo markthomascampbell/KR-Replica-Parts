@@ -1,18 +1,25 @@
 #include "SoftwareSerial.h"
 #include <Adafruit_NeoPixel.h>
 // Board: Arduino Nano    Processor: ATMega32P (Old Bootloader)
+
 #define LED_PIN 5                                                   // pin NeoPixels are connected to
 #define BRIGHTNESS 50                                               // LED Brightness (0-255)
-// Uncomment 4 lines below if transmission is a 3 speed
-  //const int LED_COUNT = 6;                                        // Number of NeoPixels
-  //const int hallArray [] = {2,3,4,5,6,7};                         // Pins used by each hall sensor
-  //const int gearArray [] = {0,1,2,3,4,5};                         // 0=Park, 1=Reverse, 2=Neutral, 3=Drive, 4=2, 5=1
-  //const String gearNames [] = { "Park", "Reverse", "Neutral", "Drive", "Second", "First" };
-// Uncomment 4 lines below if transmission is a 4 speed
+//#define trans_3_Speed                                             // Uncomment if transmission is a 3 speed
+#define trans_4_Speed                                               // Uncomment if transmission is a 4 speed
+
+#if defined(trans_3_Speed)
+  const int LED_COUNT = 6;                                          // Number of NeoPixels
+  const int hallArray [] = {2,3,4,5,6,7};                           // Pins used by each hall sensor
+  const int gearArray [] = {0,1,2,3,4,5};                           // 0=Park, 1=Reverse, 2=Neutral, 3=Drive, 4=2, 5=1
+  const String gearNames [] = { "Park", "Reverse", "Neutral", "Drive", "Second", "First" };
+
+#elif defined(trans_4_Speed)
   const int LED_COUNT = 7;                                          // Number of NeoPixels
   const int hallArray [] = {2,3,4,5,6,7,8};                         // Pins used by each hall sensor
   const int gearArray [] = {0,1,2,3,4,5,6};                         // 0=Park, 1=Reverse, 2=Neutral, 3=Drive, 4=3, 5=2, 6=1
   const String gearNames [] = { "Park", "Reverse", "Neutral", "Drive", "Third", "Second", "First" };
+#endif
+
 const int count = 10;                                               // a debouncer for hall sensors
 const int arraySize = sizeof(hallArray)/sizeof(hallArray[0]);       // Size of arrays
 int isOn[arraySize] ;                                               // Array to keep track of whether a given position is lit
@@ -25,9 +32,11 @@ void setup() {
   strip.begin();                                                    // Init NeoPixel strip
   strip.show();                                                     // Turn OFF all pixels ASAP
   strip.setBrightness(BRIGHTNESS);                                  // Set brightness level of LEDs
-  for (int sensor = 0; sensor < arraySize; sensor++) { pinMode (sensor, INPUT); 
-    Serial.print(F("Initializing pin ")); Serial.println(sensor); }         // init hall sensors
-  Serial.begin(9600);
+  for (int sensor = 0; sensor < arraySize; sensor++) {              // For loop to init hall sensors
+    pinMode (sensor, INPUT);                                        // Define pin of hall sensor
+    Serial.print(F("Initializing pin ")); Serial.println(sensor);   // Announce init of hall sensor
+  }                                                                 // End Loop
+  Serial.begin(9600);                                               // Initialize Serial connection
   Serial.println(F("starting up..."));
 }
 
